@@ -26,8 +26,8 @@ sha256sums=('SKIP'
 install=gvim-git.install
 
 pkgver() {
-    cd $_pkgname
-    git describe --tags | sed 's/^v//;s/-/./g'
+  cd $_pkgname
+  git describe --tags | sed 's/^v//;s/-/./g'
 }
 
 prepare() {
